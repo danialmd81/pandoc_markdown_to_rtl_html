@@ -134,7 +134,7 @@ th {
 Run the Pandoc command:
 
 ```sh
-pandoc input.md -o output.html --self-contained --css=rtl.css
+pandoc input.md -o output.html  --embed-resources --standalone --css=rtl.css
 ```
 
 Voilà! You've got yourself a beautiful RTL HTML file named `output.html`.
