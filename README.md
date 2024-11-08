@@ -47,97 +47,19 @@ pandoc input.md -o output.html  --embed-resources --standalone --css=rtl.css
 - `--self-contained`: Ensures the HTML file is self-contained, embedding all resources.
 - `--css=rtl.css`: Points to a CSS file with RTL styles.
 
-### Example 📝
+### Additional Resources 📂
 
-Create a CSS file named `rtl.css` in the same directory with the following content:
-
-```css
-/* General styles for the document */
-body {
-  font-family: 'XB Niloofar', sans-serif;
-  direction: rtl;
-  text-align: right;
-  line-height: 1.6;
-  margin: 20px;
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
-}
-
-/* Styles for headers */
-h1, h2, h3, h4, h5, h6 {
-  text-align: right;
-  color: #ffffff; /* White text for headers */
-}
-
-/* Styles for paragraphs */
-p {
-  text-align: right;
-  color: #e0e0e0; /* Light text color */
-}
-
-/* Styles for lists */
-ul, ol {
-  text-align: right;
-  padding-right: 20px;
-  color: #e0e0e0; /* Light text color */
-}
-
-/* Styles for code blocks and plaintext */
-pre, code, .plaintext {
-  direction: ltr;
-  text-align: left;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #333333; /* Dark background for code blocks */
-  color: #e0e0e0; /* Light text color */
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-/* Styles for inline code */
-code {
-  background-color: #333333; /* Dark background for inline code */
-  color: #e0e0e0; /* Light text color */
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-/* Styles for blockquotes */
-blockquote {
-  border-right: 5px solid #444444; /* Dark border for blockquotes */
-  padding-right: 10px;
-  margin-right: 20px;
-  color: #aaaaaa; /* Light gray text for blockquotes */
-}
-
-/* Styles for tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  background-color: #1e1e1e; /* Dark background for tables */
-  color: #e0e0e0; /* Light text color */
-}
-
-th, td {
-  border: 1px solid #444444; /* Dark border for table cells */
-  padding: 8px;
-  text-align: right;
-}
-
-th {
-  background-color: #333333; /* Dark background for table headers */
-  color: #e0e0e0; /* Light text color */
-}
-```
-
-Run the Pandoc command:
+You can download `rtl.css` and `light-rtl.css` from this workspace to style your RTL HTML files. Once you have the CSS files, you can convert your Markdown to an RTL HTML file with the following command:
 
 ```sh
-pandoc input.md -o output.html  --embed-resources --standalone --css=rtl.css
+pandoc input.md -o output.html --embed-resources --standalone --css=rtl.css
 ```
 
-Voilà! You've got yourself a beautiful RTL HTML file named `output.html`.
+For a light-themed RTL HTML file, use:
+
+```sh
+pandoc input.md -o output.html --embed-resources --standalone --css=light-rtl.css
+```
 
 ## Conclusion 🎉
 
