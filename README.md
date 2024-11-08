@@ -37,7 +37,7 @@ sudo apt-get install pandoc
 To convert a Markdown file to an RTL HTML file, use this magical command:
 
 ```sh
-pandoc input.md -o output.html --embed-resources --standalone --css=rtl.css
+pandoc input.md -o output.html  --embed-resources --standalone --css=rtl.css
 ```
 
 ### Explanation 📖
