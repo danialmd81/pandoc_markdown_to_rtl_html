@@ -52,13 +52,13 @@ pandoc input.md -o output.html  --embed-resources --standalone --css=rtl.css
 You can download `rtl.css` and `light-rtl.css` from this workspace to style your RTL HTML files. Once you have the CSS files, you can convert your Markdown to an RTL HTML file with the following command:
 
 ```sh
-pandoc input.md -o output.html --embed-resources --standalone --css=rtl.css
+pandoc input.md -o output.html -c rtl.css --self-contained 
 ```
 
 For a light-themed RTL HTML file, use:
 
 ```sh
-pandoc input.md -o output.html --embed-resources --standalone --css=light-rtl.css
+pandoc input.md -o output.html -c light-rtl.css --self-contained 
 ```
 
 ## Conclusion 🎉
